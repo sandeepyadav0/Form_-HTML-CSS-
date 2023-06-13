@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+        label {
+            width: 140px;
+            display: inline-flex;
+        }
+
+        fieldset { 
+            width: 400PX;
+            border-color: #A67F73;
+        }
+
+        legend {
+            border: 2px solid #A67F73;
+            background-color: orange;
+            color: white;
+        }
+
+        input , textarea {
+            background-color: #FEE3AE;
+            border-color: #A67F73;
+        }
+
+        select {
+            background-color: #FEE3AE;
+            border-color: #A67F73;
+        } 
+
+    </style>
+
+</head>
+<body>
+    <form method="get" action="">
+        <fieldset>
+            <legend>This is my form</legend><br>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"><br><br>
+
+            <label for="Confirm Password">Confirm Password:</label>
+            <input type="password" name="password" id="password"><br><br>
+
+            <label for="Upload Your Picture">Upload Your Picture</label>
+            <input type="text" name="picture" id="picture">&nbsp; <button>Browser...</button><br><br>
+            <label for="Gender">Gender:
+                <input type="radio" name="male" id="male">Male
+                <input type="radio" name="Female" id="Female">Female
+            </label><br><br>
+
+            <label for="Select Country">Select Counter</label>
+            <select>
+                <option value="uk">United Kingdom</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+            </select><br><br>
+
+            <label for="Hobby">Hobby:
+                <input type="checkbox" name="hobby">Cricket
+                <input type="checkbox" name="hobby">Football
+            </label><br><br>
+
+            <label for="address">Address</label>
+            <textarea rows="6" cols="25" name="address"></textarea><br><br>
+
+            <input type="Submit" value="Submit">
+        
+        </fieldset>
+    </form>
+    
+</body>
+</html>
